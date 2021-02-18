@@ -28,7 +28,6 @@ public class Parser {
             System.out.println("Lists of proxies and ports received.");
             System.out.println("==================");
             return proxies;
-
         } catch (IOException ex) {
             ex.printStackTrace();
             return new ArrayList<>();
