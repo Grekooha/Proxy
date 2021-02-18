@@ -24,8 +24,8 @@ public class ProxyHelper {
 
     private void waitResult(ArrayList<ProxyData> proxies) {
         var timeStart = System.currentTimeMillis();
+        int MAX_AWAIT_MS = 8000;
         while (counter < proxies.size()) {
-            int MAX_AWAIT_MS = 60000;
             if ( System.currentTimeMillis() - timeStart > MAX_AWAIT_MS) break;
             try {
                 Thread.sleep(1000);
